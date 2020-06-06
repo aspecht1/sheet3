@@ -74,14 +74,4 @@ J_d[0, 0, 1] = J
 J_d[1, 1, 2] = J
 J_d[2, 2, 0] = J
 
-#print(calc_H(J_c, 3))
-N = 3
-max_bin_len = len(bin(2 ** N - 1)[2:])
-n = '100'#create_n(N)[3]
-n_dec = int(n, 2)
-i = 0
-j = 1
-new_i = (max_bin_len - 1) - i  # need to preprocess i, j and k because the most left site in |01 ... 1>
-new_j = (max_bin_len - 1) - j
-print(n)
-print(n_dec + (1 - 2*int(n[i])) * 2 ** i + (1 - 2 * int(n[j])) * 2 ** j)
+print(calc_H(J_c, 3))
